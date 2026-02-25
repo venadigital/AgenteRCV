@@ -1,0 +1,718 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Author" content="Un-named">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 48.0px 0.0px 12.0px 0.0px; text-align: center; font: 24.0px Arial; color: #1a56a0}
+    p.p2 {margin: 0.0px 0.0px 6.0px 0.0px; text-align: center; font: 17.0px Arial; color: #2e75b6}
+    p.p3 {margin: 0.0px 0.0px 24.0px 0.0px; text-align: center; font: 13.0px Arial; color: #555555}
+    p.p4 {margin: 8.0px 0.0px 8.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #555555}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #222222}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Times; color: #222222}
+    p.p8 {margin: 24.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px Arial; color: #999999}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p11 {margin: 18.0px 0.0px 9.0px 0.0px; font: 16.0px Arial; color: #1a56a0}
+    p.p12 {margin: 3.0px 0.0px 5.0px 0.0px; font: 11.0px Arial; color: #222222}
+    p.p13 {margin: 4.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p14 {margin: 3.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p16 {margin: 14.0px 0.0px 6.0px 0.0px; font: 13.0px Arial; color: #2e75b6}
+    p.p18 {margin: 5.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p19 {margin: 10.0px 0.0px 4.0px 0.0px; font: 11.0px Arial; color: #333333}
+    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #ffffff}
+    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #2e75b6}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial}
+    p.p23 {margin: 6.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Arial; color: #ffffff}
+    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Arial; color: #1a56a0}
+    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #333333}
+    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #444444}
+    p.p28 {margin: 8.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.0px Arial; color: #ffffff}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.0px Arial; color: #222222}
+    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.0px Times; color: #222222}
+    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #1a56a0}
+    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.0px Times; color: #1a56a0}
+    p.p35 {margin: 4.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Times; color: #ffffff}
+    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.0px Times; color: #ffffff}
+    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Times; color: #1a56a0}
+    p.p39 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Times}
+    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.0px Times}
+    p.p41 {margin: 3.0px 0.0px 5.0px 0.0px; font: 11.0px Arial; color: #666666}
+    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Arial; color: #c0392b}
+    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Arial; color: #e67e22}
+    p.p44 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Arial; color: #27ae60}
+    p.p45 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Times; color: #2e75b6}
+    p.p46 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Times; color: #ff0000}
+    p.p47 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px Arial; color: #aaaaaa}
+    li.li15 {margin: 2.0px 0.0px 3.0px 0.0px; font: 11.0px Arial; color: #222222}
+    li.li17 {margin: 1.5px 0.0px 3.0px 0.0px; font: 11.0px Arial; color: #444444}
+    span.s1 {font: 10.0px Times}
+    span.s2 {font: 12.0px Times}
+    span.s3 {text-decoration: underline line-through}
+    span.s4 {text-decoration: underline}
+    span.s5 {font: 10.0px Arial}
+    table.t1 {border-collapse: collapse}
+    td.td1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #bfbfbf #bfbfbf #bfbfbf #bfbfbf; padding: 0.0px 5.0px 0.0px 5.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><b>PROPUESTA COMERCIAL</b><b></b></p>
+<p class="p2"><b>Agente Virtual de WhatsApp con IA</b><b></b></p>
+<p class="p3">Automatización de Citas e Integración con Su Nube</p>
+<p class="p4"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><b>Preparado para:</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6">Centro de Fisioterapia RC<span class="s1">V </span>Recover</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><b>Responsables cliente:</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6">Diana Rengifo – Pedro<span class="s1"> Escobar</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><b>Preparado por:</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">Laura Salazar / Vena Digital</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><b>Fecha:</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6">25 de febrero de 2026</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><b>Versión:</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6">1.0 – Propuesta Inicial</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><b>Vigencia:</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6">30 días a partir de la fecha de emisión</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p8"><br></p>
+<p class="p9"><i>Este documento es confidencial y está destinado exclusivamente a los destinatarios mencionados.</i><i></i></p>
+<p class="p10"></p>
+<p class="p11"><b>1. Resumen Ejecutivo</b><b></b></p>
+<p class="p12">RC<span class="s2">V</span> Recover enfrenta una pérdida tangible de oportunidades de negocio como consecuencia de la imposibilidad de responder mensajes de WhatsApp de manera oportuna fuera del horario laboral. La recepcionista dedica la mayor parte de su jornada a tareas repetitivas de atención vía WhatsApp (consultas, confirmaciones y agendamientos), reduciendo drásticamente su disponibilidad para actividades de mayor valor.</p>
+<p class="p13"><br></p>
+<p class="p12">La presente propuesta detalla la implementación de un Agente Virtual 24/7 en WhatsApp, impulsado por Inteligencia Artificial (OpenAI), integrado en tiempo real con el software médico «SuNube» a través de la plataforma de automatización n8n. El agente será capaz de:</p>
+<p class="p14"><br></p>
+<ul class="ul1">
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Brindar información completa sobre servicios, horarios, sedes, convenios y costos.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Agendar, modificar y cancelar citas verificando disponibilidad en tiempo real.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Recordar el historial de interacciones para personalizar la atención.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Escalar automáticamente a un operador humano cuando sea necesario.</i></b><b><i></i></b></span></li>
+</ul>
+<p class="p13"><br></p>
+<p class="p12">El proyecto se ejecutará en cuatro fases (Levantamiento, Implementación, Piloto y Despliegue)<span class="Apple-converted-space"> </span></p>
+<p class="p4"><br></p>
+<p class="p11"><b>2. Diagnóstico: Situación Actual</b><b></b></p>
+<p class="p16"><b>2.1 Problema Central</b><b></b></p>
+<p class="p12">El canal de WhatsApp es hoy el principal punto de contacto entre RC<span class="s2">V</span> Recover y sus pacientes. Sin embargo, su gestión manual genera tres cuellos de botella críticos:</p>
+<p class="p13"><br></p>
+<ul class="ul1">
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Citas perdidas: Sin cobertura fuera de horario laboral:</i></b><b><i></i></b></span></li>
+  <li class="li17"><b><i></i></b><span class="s3"><b><i>Los mensajes que llegan fuera del horario de la recepcionista no se atienden hasta el día siguiente, momento en que el paciente ya optó por otra clínica o simplemente abandonó la intención de agendar.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Sobrecarga operativa: La recepcionista concentra el 80% de su tiempo en tareas automatizables:</i></b><b><i></i></b></span></li>
+  <li class="li17"><b><i></i></b><span class="s3"><b><i>Consultas de horarios, precios, confirmaciones y modificaciones de cita que podrían resolverse sin intervención humana.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Tiempos de espera variables: Cuando la recepcionista está atendiendo en mostrador</i></b></span><span class="s2"> o realizando otras tareas, </span><span class="s3"><b><i>los mensajes de WhatsApp quedan sin respuesta durante períodos prolongados, generando insatisfacción.</i></b><b><i></i></b></span></li>
+</ul>
+<p class="p13"><br></p>
+<p class="p16"><b>2.2 Impacto de Negocio</b><b></b></p>
+<p class="p12">Estos problemas se traducen directamente en:</p>
+<p class="p14"><br></p>
+<ul class="ul1">
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Pérdida de ingresos por citas no agendadas por falta de respuesta oportuna.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Insatisfacción de pacientes que experimentan demoras en confirmaciones y modificaciones.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Subutilización del talento humano en tareas de bajo valor en lugar de atención clínica y relacional.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Ausencia de datos estructurados sobre demanda, horarios pico y servicios más solicitados.</i></b><b><i></i></b></span></li>
+</ul>
+<p class="p4"><br></p>
+<p class="p11"><b>3. Solución Propuesta</b><b></b></p>
+<p class="p16"><b>3.1 El Agente Virtual IA</b><b></b></p>
+<p class="p12">Se implementará un asistente conversacional de lenguaje natural (<i>no un chatbot rígido de menús</i>) impulsado por modelos de lenguaje de OpenAI, orquestado mediante n8n <i>(herramienta de auto</i><span class="s2"><i>matización</i></span>) e integrado directamente con «SuNube». Operará en el número de WhatsApp Business existente del centro.</p>
+<p class="p18"><br></p>
+<p class="p19"><b>Capacidades funcionales del agente</b><b></b></p>
+<p class="p14"><br></p>
+<ul class="ul1">
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Responder consultas sobre servicios, terapias, especialidades, sedes, convenios con aseguradoras y costos (privado y con prestadores).</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Consultar disponibilidad de agenda en tiempo real desde «SuNube» y proponer opciones al paciente.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Confirmar, modificar y cancelar citas, actualizando el sistema de gestión automáticamente.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Solicitar doble confirmación al paciente antes de registrar cualquier cambio en la agenda.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Reconocer al paciente por su número de </i></b></span><span class="s2">documento de identidad</span><span class="s3"><b><i> y recuperar el contexto de interacciones anteriores (memoria).</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Detectar frustación o temas fuera de su base de conocimiento y escalar automáticamente a la recepcionista con el historial completo de la conversación.</i></b><b><i></i></b></span></li>
+</ul>
+<p class="p18"><br></p>
+<p class="p16"><b>3.2 Arquitectura Técnica</b><b></b></p>
+<p class="p12">La solución se construye sobre un ecosistema de herramientas probadas y estándar en automatización empresarial:</p>
+<p class="p13"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Componente</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Tecnología</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Función</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Cerebro IA</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">OpenAI (GPT)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Procesamiento del lenguaje natural, toma de decisiones y memoria de conversación.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Orquestador</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">n8n (VPS)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Motor de automatización y flujos de trabajo desplegado en servidor dedicado.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Canal</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">WhatsApp Business API</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Recepción y envío de mensajes vía el número de WhatsApp del centro.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Integración</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">API SuNube</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Consulta y escritura de citas, verificación de disponibilidad y registro en tiempo real.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Respaldo</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Google Calendar / Workspace</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Sistema de conciliación secundario y backup de citas.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<p class="p11"><b>4. Plan de Implementación</b><b></b></p>
+<p class="p12">El proyecto se ejecuta en cuatro fases secuenciales, garantizando validación en cada etapa antes de avanzar a la siguiente.</p>
+<p class="p23"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p24"><b>#</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Fase</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Descripción y Actividades Clave</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Entregable / Criterio de Salida</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>1</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Levantamiento (PDR)</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26"><b>Entrevistas con Diana, Pedro, recepcionistas y profesionales del centro. Mapeo del proceso actual, identificación de riesgos, definición de reglas de negocio (horarios, políticas de cancelación, no-show, escalamiento), y casos de excepción.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27"><b>Documento de Requisitos del Proyecto (PDR) validado y firmado por Diana y Pedro.</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>2</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Construcción e Integración</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26"><b>Desarrollo del workflow en n8n. Integración con API de Su Nube (agendamiento y consulta de disponibilidad). Configuración del agente en OpenAI con la base de conocimiento del PDR. Configuración de WhatsApp Business API y Google Calendar como respaldo.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27"><b>Agente funcional en entorno de pruebas con todos los flujos integrados.</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>3</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Piloto (1–2 semanas)</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26"><b>Prueba end-to-end con conversaciones reales. Monitoreo intensivo de logs y errores. Ajustes de interpretación del modelo, reglas de negocio y experiencia de usuario. Validación de UAT por parte de la recepción del centro.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27"><b>Piloto concluido sin fallas críticas. Informe de resultados y ajustes documentados.</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>4</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21"><b>Despliegue y Entrega</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26"><b>Puesta en producción para todos los clientes del centro. Entrega de manuales de uso y guías de supervisión para el equipo de RC</b><span class="s1">V</span><b> Recover. Activación del monitoreo 24/7 y protocolo de escalamiento.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27"><b>Agente en producción. Documentación técnica y manuales entregados.</b><b></b></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p28"><br></p>
+<p class="p12">Nota: El periodo de piloto (1–2 semanas) no tiene costo adicional y está incluido en el setup inicial.</p>
+<p class="p4"><br></p>
+<p class="p11"><b>5. Modelo de Inversión</b><b></b></p>
+<p class="p16"><b>5.1 Estructura de Costos</b></p>
+<p class="p10"><span class="s4"><b>Setup Pago único</b><b></b></span></p>
+<p class="p13"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Concepto</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Descripción / Alcance</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"><b>Monto</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Setup Inicial (Pago Único)</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Incluye: PDR (levantamiento y documentación de requisitos), construcción del workflow en n8n, integración con SuNube y APIs, configuración del agente IA, piloto de 1–2 semanas y entrega de documentación.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><b>$3.600.000</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">Creación API (Pago Único)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">Incluye: Pago a SuNube para activar API del módulo de citas<span class="Apple-converted-space"> </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31">$277.000</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p32"><b>Tota</b><span class="s1"><b>l</b><b></b></span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p33"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p34"><span class="s5"><b>$</b></span><b>3.877.000</b><b></b></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p28"><br></p>
+<p class="p35"><span class="s4"><b>Fee mensual de operación<span class="Apple-converted-space"> </span></b><b></b></span></p>
+<p class="p13"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p36"><b>Concepto</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p36"><b>Descripción / Alcance</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p37"><b>Monto</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">Mantenimiento Mensual<span class="Apple-converted-space"> </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">Incluye: Hosting del servidor VPS, consumo de API de WhatsApp Business, consumo de API de OpenAI, monitoreo 24/7 del sistema y soporte técnico.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31">$ 260.000</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">API SuNube<span class="Apple-converted-space"> </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">Incluye: hasta 5.000 transacciones al mes</p>
+        <p class="p33"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31">$ 183.000</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p38"><b>Total mensual</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p33"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p34"><b>$ 443.000</b><b></b></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p28"><br></p>
+<p class="p28"><br></p>
+<p class="p16"><b>5.2 Condiciones de Pago</b><b></b></p>
+<p class="p13"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Cuota</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Momento del Pago</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"><b>Monto</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p22">1ª Cuota Setup (60%)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Antes de iniciar las entrevistas del PDR (Fase 1).<span class="Apple-converted-space"> </span></p>
+        <p class="p39">** E<i>l plan de pago no incluye los pagos a Sunube, este los hace directamente RCV</i><i></i></p>
+        <p class="p33"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p40"><span class="s5"><b>$</b></span><b>2.160.000</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p22">2ª Cuota Setup (40%)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Al finalizar satisfactoriamente el piloto de 1–2 semanas. <br>
+</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p40"><span class="s5"><b>$1.4</b></span><b>40.000</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p22">Mantenimiento Mensual</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Facturado los primeros 3 días de cada mes, a partir del mes post-despliegue.<span class="Apple-converted-space"> </span></p>
+        <p class="p39">** E<i>l pago mensual no incluye los pagos a Sunube, este los hace directamente RCV</i><i></i></p>
+        <p class="p33"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p40"><span class="s5"><b>$</b></span><b>260.000 </b><span class="s5"><b>/mes</b><b></b></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p23"><br></p>
+<p class="p41"><i>Nota importante: Las nuevas funcionalidades no incluidas en este alcance (p.ej. campañas de marketing proactivo, módulos de informes personalizados, integraciones adicionales) se cotizarán como proyectos independientes.</i><i></i></p>
+<p class="p4"><br></p>
+<p class="p11"><b>6. Riesgos y Plan de Mitigación</b><b></b></p>
+<p class="p12">Se han identificado los siguientes riesgos críticos del proyecto, junto con sus controles preventivos y detectivos:</p>
+<p class="p18"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Riesgo</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Mitigación Propuesta</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24"><b>Nivel</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Dependencia de la API de Su Nube: acceso, permisos y tiempos de integración.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>RC</b><span class="s1">V</span><b> Recover gestiona el contacto técnico con Su Nube en la Fase 1. Se define SLA de integración antes de iniciar construcción.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42"><b>Alto</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>PDR incompleto o impreciso: reglas de negocio mal definidas generarán errores en la agenda.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Entrevistas estructuradas con todos los stakeholders (Diana, Pedro, recepcionistas, fisioterapeutas). Validación formal del PDR por </b><span class="s1">Diana y Pedro</span><b>.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42"><b>Alto</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Doble agendamiento por fallo de sincronización con Su Nube.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Integración vía API con logs de auditoría. Google Calendar como sistema de conciliación secundario. Lógica de doble confirmación con el paciente.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p43"><b>Medio</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Gobernanza de datos: información sensible de pacientes gestionada por canales externos.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Definición de política de privacidad y manejo de datos durante el PDR. Cifrado TLS en servidor. Minimización del dato almacenado en el agente.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p43"><b>Medio</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Fallo en alguno de los servicios externos (WhatsApp, OpenAI, VPS).</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Monitoreo 24/7 con alertas automáticas. Plan de contingencia documentado: fallback a mensaje informativo y toma manual.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p43"><b>Medio</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Rechazo o baja adopción por parte de los pacientes.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Piloto controlado de 1–2 semanas para medir adopción. Tono y experiencia conversacional natural. Opción de escalamiento humano siempre disponible.</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p44"><b>Bajo</b><b></b></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<p class="p11"><b>7. Prerrequisitos y Responsabilidades del Cliente</b><b></b></p>
+<p class="p12">Para garantizar el éxito del proyecto y cumplir los plazos estimados, RC<span class="s2">V</span> Recover debe proveer los siguientes elementos antes del inicio de cada fase:</p>
+<p class="p18"><br></p>
+<p class="p16"><b>7.1 Antes del inicio (Fase 1)</b><b></b></p>
+<ul class="ul1">
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Pago del 60% del setup inicial<span class="Apple-converted-space"> </span></i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Contacto técnico del proveedor de Su Nube para iniciar la gestión de integración.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Cuenta activa de WhatsApp Business vinculada al número del centro (Meta Business Manager).</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Cuenta de OpenAI/ChatGPT para el motor de IA del agente.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Cuenta de Google Workspace (o personal) para respaldos en Google Calendar.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Disponibilidad de Diana, Pedro y la</i></b></span><span class="s2">s</span><span class="s3"><b><i> recepcionistas para las entrevistas de levantamiento (Fase 1).</i></b><b><i></i></b></span></li>
+</ul>
+<p class="p18"><br></p>
+<p class="p16"><b>7.2 Durante el Piloto (Fase 3)</b><b></b></p>
+<ul class="ul1">
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Participación activa de las recepcionistas en pruebas UAT y reporte de incidencias.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Disponibilidad de Diana o Pedro para validar ajustes a las reglas de negocio.</i></b><b><i></i></b></span></li>
+</ul>
+<p class="p18"><br></p>
+<p class="p16"><b>7.3 Post-Despliegue</b><b></b></p>
+<ul class="ul1">
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Registro y pago del fee mensual de mantenimiento los primeros 3 días de cada mes.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Notificación oportuna al equipo implementador ante cualquier cambio en los servicios, precios o políticas del centro que requiera actualización de la base de conocimiento del agente.</i></b><b><i></i></b></span></li>
+</ul>
+<p class="p4"><br></p>
+<p class="p11"><b>8. Métricas de Éxito</b><b></b></p>
+<p class="p12">Al finalizar el piloto y durante los primeros 3 meses de operación, se evaluará el rendimiento del agente en función de los siguientes indicadores:</p>
+<p class="p13"><br></p>
+<ul class="ul1">
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Tasa de resolución autónoma: porcentaje de conversaciones gestionadas completamente por el agente sin escalamiento (objetivo: &gt;80%).</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Tasa de citas agendadas automáticamente: proporción de citas registradas en Su Nube a través del agente vs. total de solicitudes recibidas.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Tiempo de respuesta promedio: tiempo entre el mensaje del paciente y la respuesta del agente (objetivo: &lt;10 segundos).</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Cobertura fuera de horario: volumen de interacciones atendidas fuera del horario laboral de la recepcionista.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Satisfacción del paciente: medida a través de encuestas opcionales al final de la conversación.</i></b><b><i></i></b></span></li>
+  <li class="li15"><b><i></i></b><span class="s3"><b><i>Reducción de carga operativa de la recepcionista: disminución en el tiempo dedicado a gestión de WhatsApp.</i></b><b><i></i></b></span></li>
+</ul>
+<p class="p4"><br></p>
+<p class="p11"><b>9. Siguientes Pasos para Iniciar el Proyecto</b><b></b></p>
+<p class="p12">Para dar inicio formal al proyecto, se requieren las siguientes acciones por parte de RC<span class="s2">V</span> Recover:</p>
+<p class="p13"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p24"><b>#</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Acción Requerida</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><b>Responsable</b><b></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>1</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Aprobar la presente propuesta comercial.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21">Diana Rengifo / Pedro Escobar</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>2</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Realizar el pago del 60% del setup para activar el proyecto.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p45"><span class="s5">Diana Rengifo </span>/ Pedro Escobar</p>
+        <p class="p33"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>3</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Compartir el contacto técnico del proveedor de Su Nube.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p46">Ya realizado</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>4</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Autorizar el acceso al número de WhatsApp Business (Meta Business Manager).</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21">Diana Rengifo</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>5</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Designar las recepcionistas responsables para entrevistas y piloto.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21">Diana Rengifo</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>6</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Proveer acceso a cuenta de OpenAI y Google Workspace.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21">Diana Rengifo</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>7</b><b></b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22">Coordinar agenda de entrevistas para Fase 1 (PDR).</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21">Diana Rengifo / <span class="s1">Pedro Escobar</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<p class="p47"><i>© 2026 Equipo Implementador – Propuesta válida por 30 días desde la fecha de emisión.</i><i></i></p>
+</body>
+</html>

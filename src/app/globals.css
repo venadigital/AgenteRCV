@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f6f8;
+  --foreground: #0a2b2c;
+  --rcv-lime: #bccf03;
+  --rcv-teal: #006667;
+  --rcv-ink: #083334;
+  --rcv-muted: #5d6d6d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-libre-franklin);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 1rem;
+    scroll-padding-bottom: 5.5rem;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-libre-franklin), "Libre Franklin", "Franklin Gothic Medium",
+    "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--rcv-lime) 70%, white);
+  color: var(--rcv-ink);
+}
+
+@keyframes rcv-orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rcv-orbit-counter {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes rcv-orbit-bob {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+    box-shadow: 0 8px 22px rgba(0, 102, 103, 0.1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 26px rgba(0, 102, 103, 0.16);
+  }
+}
+
+.proposal-doc {
+  display: grid;
+  gap: 0.6rem;
+  color: var(--rcv-ink);
+}
+
+.proposal-doc [id] {
+  scroll-margin-top: 5.5rem;
+}
+
+.proposal-doc table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid color-mix(in oklab, var(--rcv-teal) 16%, white);
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 12px 30px rgba(0, 102, 103, 0.08);
+  margin: 0.4rem 0 1rem;
+}
+
+.proposal-doc tbody {
+  display: table;
+  width: 100%;
+}
+
+.proposal-doc td {
+  padding: 0.7rem 0.75rem;
+  vertical-align: top;
+  border-right: 1px solid color-mix(in oklab, var(--rcv-teal) 12%, white);
+  border-bottom: 1px solid color-mix(in oklab, var(--rcv-teal) 12%, white);
+  min-width: 120px;
+}
+
+.proposal-doc tr:last-child td {
+  border-bottom: 0;
+}
+
+.proposal-doc td:last-child {
+  border-right: 0;
+}
+
+.proposal-doc tr:first-child td {
+  background: var(--rcv-teal);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.proposal-doc p,
+.proposal-doc li {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: var(--rcv-ink);
+}
+
+.proposal-doc .p1 {
+  margin: 0;
+  color: var(--rcv-teal);
+  font-size: clamp(1.75rem, 3vw, 2.3rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-align: left !important;
+}
+
+.proposal-doc .p2 {
+  margin: 0.25rem 0 0;
+  color: var(--rcv-ink);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-align: left !important;
+}
+
+.proposal-doc .p3 {
+  margin: 0.25rem 0 0.8rem;
+  color: var(--rcv-muted);
+  font-size: 0.98rem;
+  text-align: left !important;
+}
+
+.proposal-doc .p11 {
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in oklab, var(--rcv-teal) 15%, white);
+  color: var(--rcv-teal);
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.proposal-doc .p16 {
+  margin-top: 0.5rem;
+  color: var(--rcv-ink);
+  font-size: 0.98rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.proposal-doc .p19,
+.proposal-doc .p35,
+.proposal-doc .p10 {
+  color: var(--rcv-teal);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.proposal-doc .p9,
+.proposal-doc .p41,
+.proposal-doc .p47 {
+  color: color-mix(in oklab, var(--rcv-muted) 90%, white);
+  font-size: 0.86rem;
+}
+
+.proposal-doc .p24,
+.proposal-doc .p25,
+.proposal-doc .p42,
+.proposal-doc .p43,
+.proposal-doc .p44 {
+  text-align: center !important;
+}
+
+.proposal-doc .p29,
+.proposal-doc .p30,
+.proposal-doc .p31,
+.proposal-doc .p34,
+.proposal-doc .p37,
+.proposal-doc .p40 {
+  text-align: right !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.proposal-doc ul {
+  margin: 0.15rem 0 0.75rem 1.1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.proposal-doc li::marker {
+  color: var(--rcv-teal);
+}
+
+.proposal-doc .p4,
+.proposal-doc .p8,
+.proposal-doc .p13,
+.proposal-doc .p14,
+.proposal-doc .p18,
+.proposal-doc .p23,
+.proposal-doc .p28,
+.proposal-doc .p33 {
+  display: none;
+}
+
+.proposal-doc span.s3 {
+  text-decoration: none;
+}
+
+.proposal-doc .Apple-converted-space {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 1rem;
+  }
+
+  .proposal-doc p,
+  .proposal-doc li {
+    font-size: 0.9rem;
+  }
+
+  .proposal-doc td {
+    min-width: 170px;
+  }
+}
