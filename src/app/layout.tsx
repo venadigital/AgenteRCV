@@ -12,6 +12,13 @@ export const metadata: Metadata = {
   title: "Propuesta Comercial | RCV Recover",
   description:
     "Propuesta comercial visual para Agente Virtual de WhatsApp con IA de RCV Recover.",
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
